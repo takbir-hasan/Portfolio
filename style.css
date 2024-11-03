@@ -325,8 +325,16 @@
             width: 40%;
         }
     }
-   
-   
+
+ .skills-container li.express::after{
+       animation-name: express;
+    }
+    
+    @keyframes express{
+        to{
+            width: 80%;
+        }
+    }
    
    .skills-container li.node::after{
       animation-name: node;
@@ -360,7 +368,7 @@
        }
    }
  .skills-container li.tailwind::after{
-      animation-name: react;
+      animation-name: tailwind;
    }
    
    @keyframes tailwind{
