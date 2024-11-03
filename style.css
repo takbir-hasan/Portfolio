@@ -322,7 +322,7 @@
     
     @keyframes jq{
         to{
-            width: 80%;
+            width: 40%;
         }
     }
    
@@ -356,7 +356,16 @@
    
    @keyframes react{
        to{
-           width: 65%;
+           width: 87%;
+       }
+   }
+ .skills-container li.tailwind::after{
+      animation-name: react;
+   }
+   
+   @keyframes tailwind{
+       to{
+           width: 78%;
        }
    }
    .skills-container li.sql::after{
