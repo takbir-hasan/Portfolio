@@ -376,11 +376,20 @@
            width: 78%;
        }
    }
-   .skills-container li.sql::after{
-      animation-name: sql;
+   .skills-container li.mysql::after{
+      animation-name: mysql;
    }
    
-   @keyframes sql{
+   @keyframes mysql{
+       to{
+           width: 80%;
+       }
+   }
+.skills-container li.mssql::after{
+      animation-name: mssql;
+   }
+   
+   @keyframes mssql{
        to{
            width: 80%;
        }
