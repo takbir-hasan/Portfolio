@@ -345,6 +345,24 @@
            width: 85%;
        }
    }
+.skills-container li.dart::after{
+      animation-name: node;
+   }
+   
+   @keyframes dart{
+       to{
+           width: 63%;
+       }
+   }
+.skills-container li.flutter::after{
+      animation-name: node;
+   }
+   
+   @keyframes flutter{
+       to{
+           width: 72%;
+       }
+   }
    
    
     .skills-container li.git::after{
@@ -396,6 +414,15 @@
    }
    .skills-container li.c::after{
       animation-name: c;
+   }
+.skills-container li.firebase::after{
+      animation-name: node;
+   }
+   
+   @keyframes firebase{
+       to{
+           width: 79%;
+       }
    }
    
    @keyframes c{
