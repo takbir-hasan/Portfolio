@@ -1,596 +1,214 @@
+/* GLOBAL */
 *{
-      box-sizing: border-box;
-      font-family: 'Fira Sans', sans-serif;
+    box-sizing:border-box;
+    font-family:'Fira Sans',sans-serif;
   }
   
   body{
-      margin: 0;
+    margin:0;
+    background:#0a0f1a;
+    color:#e6f3ff;
+    line-height:1.65;
   }
-
   
+  /* Typography */
   h1{
-      font-size: 2.5rem;
-      text-align: center;
+    font-family:'Satisfy',cursive;
+    font-size:3rem;
+    color:#00eaff;
+    margin:0 0 20px;
+    line-height:1.25;
   }
   
   h2{
-      font-size: 1.5rem;
-      text-align: center;
+    font-family:'Montserrat',sans-serif;
+    font-size:2rem;
+    color:#00eaff;
+    margin:0 0 18px;
+    font-weight:600;
+    letter-spacing:.5px;
   }
-
-  a{
-      color: white;
-      font-size: 1.2rem;
-      text-decoration: none;
-  }
-
+  
   p{
-      font-size: 1.2rem;
-      text-align: justify;
+    font-size:1.15rem;
+    margin:0 0 16px;
+    color:#d6e7ff;
   }
-
-  .dotted-hr{
-      border: dotted 6px white;
-      border-bottom: none;
-      margin: 20px auto;
-      width: 70px;
+  
+  /* Layout spacing */
+  section{
+    padding:70px 7%;
   }
-
+  
   [class*="col-"]{
-      float: left;
-      padding: 10px;
+    width:100%;
+    float:left;
+    padding:12px;
   }
   
-  /* for mobile  */
-  [class*="col-"]{
-      width: 100%;
-  }
-  
-  
-  /* navbar design starts here  */
-
-  
-.navbar{
-      background-color: #113558;
-      padding: 1% 7%;
-      text-align: center;
-  }
-  
-  .navbar h1{
-      color: rgb(132, 203, 248);
-      margin: 0;
-      padding-top: 5px;
+  /* NAVBAR */
+  .navbar{
+    background:#0d1628;
+    padding:14px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
   
   .navbar-menu{
-      display: flex;
-      flex-direction: column;
-      text-transform: uppercase;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
   }
   
   .navbar-menu a{
-      background-color: #3770b7;
-      border-radius: 10px;
-      margin: 7px 0px;
-      padding: 10px;
+    padding:10px 16px;
+    border-radius:8px;
+    border:1px solid #00eaff55;
+    text-transform:uppercase;
+    font-size:.9rem;
   }
   
-  .navbar-menu a:hover{
-      background-color: rgb(32, 87, 170);
+  /* HERO */
+  .profile{
+    text-align:center;
+    padding:90px 7% 70px;
   }
   
-  
-  .navbar::after{
-      content: '';
-      display: table;
-      clear: both;
-  }
-  
-  /* navbar design ends here  */
-
-
-  /* profile design starts from here  */
-
-.profile{
-      padding: 0;
-      margin-top: 20px;
-      position: relative;
-      text-align: center;
-      position: relative
-  }
   .profile img{
-      width: 350px;
-      height: 350px;
-      overflow: hidden;
-      border-radius: 50%;
-      background-size: cover;
-      background-position: center;
-      box-shadow: 0 0 15px #0003;
-
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    box-shadow:0 0 25px #00eaff55;
+    margin-bottom:20px;
   }
+  
   .profile-desc h1{
-      margin: 2px;
-      font-family: 'Satisfy', cursive;
-      font-size: 3rem;
-      text-align: center;
+    font-size:3.3rem;
+    margin-bottom:10px;
   }
   
   .profile-desc p{
-      margin: 120px;
-      color: gray;
-      font-size: 1.5rem;
-      margin: 0 auto 20px auto;
-      text-align:center;
-      width: 90%;
+    max-width:650px;
+    margin:auto;
   }
   
-  .profile::after{
-      content: '';
-      display: table;
-      clear: both;
-  }
-  
-  
-  /* profile design ends here  */
-
-  
-/* about me design starts here  */
-
-
-.about-me{
-      background-color: rgb(63, 148, 201);
-      padding: 1% 7%;
-      color: white;
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
+  /* ABOUT */
+  .about-me{
+    background:#0d2538;
+    text-align:center;
   }
   
   .aboutme-image img{
-      border: 5px solid white;
-      border-radius: 50%;
-      height: 220px;
-      width: 200px;
-      box-shadow:0 0 15px #0003;
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    border:3px solid #00eaff;
+    box-shadow:0 0 15px #00eaff88;
+    margin-bottom:20px;
   }
   
-  .about-me p{
-      text-align: center;
-  }
-  
-  .about-me a{
-      font-size: 1.2rem;
-  }
-  
+  /* BUTTON */
   .cv-button{
-      background-color: #052d2f;
-      color: white;
-      border:none;
-      border-radius: 12px;
-      padding: 15px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-align: center;
-      margin: 10px;
-  }
-
-  .cv-button:hover{
-      background-color: #1ccddd;
-      color: white;
-  }
-  .cv-button:active{
-      background-color: #1ccddd;
-      color: white;
-      transform: scale(.9);
+    background:#00eaff;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    color:#000;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
   }
   
-  
-  
-  .about-me::after{
-      clear: both;
-      display: table;
-      content: '';
+  /* PROJECT SECTION */
+  .projects{
+    background:#08111c;
   }
   
-  /* about me design ends here  */
-
-  
-
-/* professional-experience starts here */
-
-.professional-experience{
-      padding: 1% 0%;
+  /* Project Card */
+  .project-card{
+    background:#0e1e2d;
+    padding:28px;
+    margin-bottom:22px;
+    border-radius:12px;
+    border:1px solid #00eaff22;
+    transition:.3s;
+    text-align:center;
   }
   
-  .professional-experience .card{
-      background-color: #a39e9e;
-      border-radius: 5px;
-      padding: 10px;
-      transition: 0.3s;
+  .project-card h3{
+    font-family:'Montserrat',sans-serif;
+    font-size:1.4rem;
+    margin-bottom:18px;
+    color:#00eaff;
+    font-weight:600;
+    letter-spacing:.4px;
+  }
+  
+  /* neon divider under title */
+  .project-card h3::after{
+    content:'';
+    display:block;
+    width:80px;
+    height:3px;
+    background:#00eaff;
+    margin:10px auto 0;
+    border-radius:100px;
+    box-shadow:0 0 8px #00eaff;
+  }
+  
+  .project-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px #00eaff66;
+  }
+  
+  /* Project buttons */
+  .project-links a{
+    display:inline-block;
+    margin:8px;
+    padding:10px 20px;
+    border-radius:8px;
+    border:1px solid #00eaff;
+    font-weight:600;
+    font-size:.95rem;
+  }
+  
+  .project-links a:hover{
+    background:#00eaff33;
+    box-shadow:0 0 12px #00eaff;
+  }
+  
+  /* EDUCATION + SKILLS */
+  .card{
+    background:#102033;
+    border-radius:12px;
+    padding:22px;
+    margin-bottom:25px;
+    border:1px solid #00eaff22;
   }
   
   .card:hover{
-      box-shadow: 0 4px 8px 5px black;
+    box-shadow:0 0 12px #00eaff55;
   }
   
-  .card-icon{
-      text-align: center;
+  /* Contact */
+  .contact input,textarea{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#0d2538;
+    color:white;
+    font-size:1rem;
+    margin-bottom:14px;
   }
   
-  .card-icon img{
-      margin-top: 20px;
-      width: 100px;
+  /* Footer */
+  .footer{
+    background:black;
+    color:#7aaac4;
+    text-align:center;
+    padding:22px 0;
   }
-  
-  .rounded-img{
-      border: 5px solid white;
-      border-radius: 50%;
-      padding: 15px;
-  }
-  
-  .card-title h2{
-      background-color: #616161;
-      color: white;
-      padding: 10px;
-      text-align: center;
-  }
-  
-  .skills-container{
-      padding-right: 45px;
-  }
-  
-  .skills-container li{
-      list-style:none;
-      font-weight: bolder;
-      margin: 30px 10px;
-      position: relative;
-      text-transform: uppercase;
-  }
-  
-  .skills-container li::before{
-     content: '';
-     position: absolute;
-     top: calc(100% + 5px);
-     left: 0;
-  
-     width: 100%;
-     height: 10px;
-     background-color: rgb(86,86,153,.5);
-     border-radius: 1000px;
-  }
-  
-  
-  .skills-container li::after{
-      content: '';
-      position: absolute;
-      top: calc(100% + 5px);
-      left: 0;
-   
-      width: 0;
-      height: 10px;
-      background-color: rgb(86,86,153,1);
-      border-radius: 1000px;
-  
-      animation-duration: 2s;
-      animation-delay: 2s;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards;
-   }
-  
-   .skills-container li.html::after{
-       animation-name: html;
-   }
-  
-   @keyframes html{
-       to{
-           width: 90%;
-       }
-   }
-  
-   .skills-container li.css::after{
-      animation-name: css;
-   }
-   
-   @keyframes css{
-       to{
-           width: 80%;
-       }
-   }
-   
-   .skills-container li.bootstrap::after{
-       animation-name: bs;
-    }
-    
-    @keyframes bs{
-        to{
-            width: 85%;
-        }
-    }
-   
-   .skills-container li.js::after{
-      animation-name: js;
-   }
-   
-   @keyframes js{
-       to{
-           width: 75%;
-       }
-   }
-   
-   .skills-container li.jquery::after{
-       animation-name: jq;
-    }
-    
-    @keyframes jq{
-        to{
-            width: 40%;
-        }
-    }
-
- .skills-container li.express::after{
-       animation-name: express;
-    }
-    
-    @keyframes express{
-        to{
-            width: 80%;
-        }
-    }
-   
-   .skills-container li.node::after{
-      animation-name: node;
-   }
-   
-   @keyframes node{
-       to{
-           width: 85%;
-       }
-   }
-.skills-container li.dart::after{
-      animation-name: node;
-   }
-   
-   @keyframes dart{
-       to{
-           width: 63%;
-       }
-   }
-.skills-container li.flutter::after{
-      animation-name: node;
-   }
-   
-   @keyframes flutter{
-       to{
-           width: 72%;
-       }
-   }
-   
-   
-    .skills-container li.git::after{
-       animation-name: github;
-    }
-    
-    @keyframes github{
-        to{
-            width: 75%;
-        }
-    }
-    
-   
-   .skills-container li.react::after{
-      animation-name: react;
-   }
-   
-   @keyframes react{
-       to{
-           width: 87%;
-       }
-   }
- .skills-container li.tailwind::after{
-      animation-name: tailwind;
-   }
-   
-   @keyframes tailwind{
-       to{
-           width: 78%;
-       }
-   }
-   .skills-container li.mysql::after{
-      animation-name: mysql;
-   }
-   
-   @keyframes mysql{
-       to{
-           width: 80%;
-       }
-   }
-.skills-container li.mssql::after{
-      animation-name: mssql;
-   }
-   
-   @keyframes mssql{
-       to{
-           width: 80%;
-       }
-   }
-   .skills-container li.c::after{
-      animation-name: c;
-   }
-.skills-container li.firebase::after{
-      animation-name: node;
-   }
-   
-   @keyframes firebase{
-       to{
-           width: 79%;
-       }
-   }
-   
-   @keyframes c{
-       to{
-           width: 90%;
-       }
-   }
-   .skills-container li.cpp::after{
-      animation-name: cpp;
-   }
-   
-   @keyframes cpp{
-       to{
-           width: 95%;
-       }
-   }
-   .skills-container li.java::after{
-      animation-name: java;
-   }
-   
-   @keyframes java{
-       to{
-           width: 73%;
-       }
-   }
-   .skills-container li.python::after{
-      animation-name: python;
-   }
-   
-   @keyframes python{
-       to{
-           width: 80%;
-       }
-   }
-   .skills-container li.oop::after{
-      animation-name: oop;
-   }
-   
-   @keyframes oop{
-       to{
-           width: 77%;
-       }
-   }
-   .skills-container li.data::after{
-      animation-name: data;
-   }
-   
-   @keyframes data{
-       to{
-           width: 80%;
-       }
-   }
-   .skills-container li.algo::after{
-      animation-name: algo;
-   }
-   
-   @keyframes algo{
-       to{
-           width: 80%;
-       }
-   }
-   
-  
-  
-  .professional-experience::after{
-     clear: both;
-     display: table;
-     content: '';
-  }
-  /* professional-experience ends here  */
-
-  /* achievement-contact starts from here  */
-.achievemnet-contact{
-      padding: 1% 7%;
-      background-color: #39a4ac;
-      color: white;
-  }
-  
-  .contact{
-      text-align: center;
-  }
-  
-  .contact input, textarea{
-      width: 100%;
-      padding: 10px;
-      font-size: 1rem;
-      text-align: center;
-      border: none;
-      border-radius: 5px;
-      resize: none;
-  }
-  
-  .contact button{
-      border: none;
-      border-radius: 12px;
-      background-color: #052d2f;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      margin: 10px;
-      width: 100px;
-  }
-
-  .contact button:hover{
-      background-color: #1ccddd;
-      color: white;
-  }
-  .contact button:active{
-      background-color: #1ccddd;
-      color: white;
-      transform: scale(.9);
-  }
-  
-  
-  .contact-links{
-      text-align: center;
-  }
-  
-  .media-buttons .btn{
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      font-size: 32px;
-      padding: 5px;
-      margin: 10px;
-      width: 50px;
-      background-color: white;
-  }
-  .btn:hover{
-      background-color: gray;
-  }
-  
-  .achievemnet-contact::after{
-      clear: both;
-      display: table;
-      content: '';
-   }
-  
-  /* achievement-contact ends here  */
-
-  
-/* footer starts from here  */
-
-.footer{
-      background-color: black;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.8rem;
-  }
-  .footer-menu a{
-      display: block;
-      margin: 15px 0;
-      font-size: 1rem;
-  }
-  
-  .footer-menu a:hover{
-      color: gray;
-  }
-  
-  
-  .footer::after{
-      display: table;
-      content: '';
-      clear: both;
-  }
-  
-  
-  /* footer ends here  */
-  
+  .footer a:hover{color:#00eaff;}
   

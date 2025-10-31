@@ -1,242 +1,1139 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sajid Hasan Takbir</title>
-       <link rel="icon" type="image/jpg" href="images/favicon.JPG">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sajid Hasan Takbir</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+<style>
+/* GLOBAL */
+*{
+  box-sizing:border-box;
+  font-family:'Fira Sans',sans-serif;
+  margin:0;
+  padding:0;
+}
 
-      <!-- font awesome cdn -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+body{
+  background:#0a0f1a;
+  color:#e6f3ff;
+  line-height:1.65;
+  overflow-x:hidden;
+}
 
-      <!-- google font -->
-      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap"
-            rel="stylesheet">
+/* Typography */
+h1{
+  font-family:'Satisfy',cursive;
+  font-size:3rem;
+  color:#00eaff;
+  margin:0 0 20px;
+  line-height:1.25;
+  animation:fadeInUp 0.8s ease-out;
+}
 
+h2{
+  font-family:'Montserrat',sans-serif;
+  font-size:2rem;
+  color:#00eaff;
+  margin:0 0 25px;
+  font-weight:600;
+  letter-spacing:.5px;
+  animation:fadeInUp 0.8s ease-out;
+}
 
-      <!-- css for mobile -->
-      <link rel="stylesheet" href="style.css">
+h3{
+  font-family:'Montserrat',sans-serif;
+  font-size:1.4rem;
+  margin-bottom:15px;
+  color:#00eaff;
+  font-weight:600;
+  letter-spacing:.4px;
+}
 
-      <!-- css for desktop -->
-      <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+p{
+  font-size:1.15rem;
+  margin:0 0 16px;
+  color:#d6e7ff;
+}
 
-</head>
+a{
+  color:#00eaff;
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
 
-<body>
-      <!-- navbar starts from here  -->
-      <div class="navbar">
-            <div class="nav-heading col-4">
-                  <h1>Takbir Hasan</h1>
-            </div>
+a:hover{
+  color:#00d4e6;
+}
 
-            <div class="navbar-menu col-6">
-                  <a href="#">Home</a>
-                  <a href="#about-me-id">About Me</a>
-                  <a href="#skill-id">Skill</a>
-                  <a href="#contact-id">Contact Me</a>
+/* Animations */
+@keyframes fadeInUp{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
 
-            </div>
-      </div>
+@keyframes slideInLeft{
+  from{opacity:0; transform:translateX(-50px);}
+  to{opacity:1; transform:translateX(0);}
+}
 
-      <!-- navbar ends here  -->
+@keyframes slideInRight{
+  from{opacity:0; transform:translateX(50px);}
+  to{opacity:1; transform:translateX(0);}
+}
 
-      <!-- profile starts from here  -->
-      <div class="profile">
+@keyframes float{
+  0%, 100%{transform:translateY(0px);}
+  50%{transform:translateY(-15px);}
+}
 
-          <div class="image">
-            <img src="images/profile.jpg" alt="profile photo">
-          </div>
+@keyframes pulse{
+  0%, 100%{box-shadow:0 0 25px #00eaff55;}
+  50%{box-shadow:0 0 40px #00eaff88;}
+}
 
-            <div class="profile-desc">
-                  <h1>Hi, there! <br> I am Sajid Hasan Takbir</h1>
-                  <p>Welcome to my personal page that I’ve designed to showcase my skills
-                        and expertise that I’ve accumulated over the year. </p>
-            </div>
-          
-      </div>
-      <!-- profile ends here  -->
+/* NAVBAR */
+.navbar{
+  background:#0d1628;
+  padding:20px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 20px rgba(0,0,0,0.3);
+  animation:slideInDown 0.6s ease-out;
+  position:relative;
+  z-index:1000;
+}
 
+@keyframes slideInDown{
+  from{opacity:0; transform:translateY(-100%);}
+  to{opacity:1; transform:translateY(0);}
+}
 
+.nav-heading h1{
+  font-size:2rem;
+  margin:0;
+}
 
-       <!-- about me starts here  -->
-     <div class="about-me" id="about-me-id">
-      <h2>ABOUT ME</h2>
-      <hr class="dotted-hr">       
-      <div class="aboutme-image col-6">
-          <img src="images/about.jpg" alt="about">
-      </div>
-      <div class="aboutme-desc col-6">
-          <p> I am an undergraduate student. I like to call myself as a passionate computer science student.</p>
-          <p> I am a fast learner, logical thinker, and capable of lead a team, but I can be straightforward, impatient, and finds it hard to refuse help requests.</p> 
-          
-          <hr>
-          <p>Name: Sajid Hasan Takbir</p> 
-          <hr>
-          <p>Address: 34/21, Quba Mosjid Road Alipur, Faridpur Sadar-7800, Faridpur, Dhaka, Bangladesh</p>
-          <hr>
-          <p>Email: <a href="mailto:takbirhasan274@gmail.com">takbirhasan274@gmail.com</a> </p>
-          <hr>
-          <p>Phone: <a href="tel:+8801750006553">+8801750006553</a> </p>
-          <hr>
-          <p>Website: <a href="http://www.sajidhasantakbir.blogspot.com" target="_blank">www.sajidhasantakbir.blogspot.com</a> </p>
-          <hr>
-         
-          <p>
-              <a href="https://drive.google.com/uc?export=download&id=1xbiBeaX54P8SS3yxzz3kZIv-466FRieR" target="_blank" download="">
-                  <button class="cv-button">Download CV</button>
-              </a>
-          </p>
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1000;
+}
 
-      </div>
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #00eaff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #00eaff44;
+}
 
-  </div>
+/* Hamburger to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
 
-  <!-- about me ends here  -->
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
 
-   <!-- professional experience start here  -->
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
 
-   <div class="professional-experience">
-     
+.navbar-menu{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
 
-      <div class="education col-6">
-          
-          <div class="card">
-              <div class="card-icon">
-                  <img class="rounded-img" src="images/book.png" alt="work icon">
-              </div>
-              <div class="card-title">
-                  <h2>EDUCATION</h2>
-              </div>
+.navbar-menu a{
+  padding:12px 24px;
+  border-radius:25px;
+  border:2px solid #00eaff55;
+  text-transform:uppercase;
+  font-size:.9rem;
+  font-weight:600;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
 
-              <div class="card-desc">
-                  <ol>
-            
-                       <li>
-                          <strong>B.Sc. in Computer Science & Engineering</strong> <br>
-                          2021-Present</br>
-                          Jashore University of Science and Technology <br>
-                          Shadhinota Shorok, Jashore Jashore 7408, Bangladesh <br>
-                          <a href="https://just.edu.bd/" target="blank">https://just.edu.bd</a>
-                       </li>
-                       <hr>
-                       <li>
-                          <strong>Higher Secondary Certificate</strong> <br>
-                          2019-2020 <br>
-                         Govt. Rajendra College, Faridpur<br>
-                         Faridpur 7800, Bangladesh<br>
-                          <a href="https://rajendra.college.gov.bd/" target="blank">https://rajendra.college.gov.bd</a>
-                       </li>
-                       <li>
-                          <strong>Secondary School Certificate</strong> <br>
-                          2017-2018 <br>
-                         Faridpur Zilla School, Faridpur<br>
-                         Faridpur 7800, Bangladesh<br>
-                          <a href="https://faridpurzillaschool.edu.bd/" target="blank">https://faridpurzillaschool.edu.bd</a>
-                       </li>
-                  </ol>
-              </div>
-      </div>
-      </div>
+.navbar-menu a::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg, transparent, #00eaff33, transparent);
+  transition:left 0.5s ease;
+}
 
-      <div class="skills col-6" id="skill-id">
-          <div class="card">
-              <div class="card-icon">
-                  <img class="rounded-img" src="images/skill.png" alt="work icon">
-              </div>
-              <div class="card-title">
-                  <h2>SKILLS</h2>
-              </div>
+.navbar-menu a:hover::before{
+  left:100%;
+}
 
-              <div class="card-desc">
-                  <div class="skills-container">
-                      <ul>
-                          <li class="html" >HTML</li>
-                          <li class="css">CSS</li>
-                          <li class="bootstrap">Bootstrap</li>
-                          <li class="tailwind">Tailwind</li>
-                          <li class="react">React.js</li> 
-                          <li class="js">JavaSCript</li>
-                          <li class="jquery">JQuery</li> 
-                          <li class="express">Express</li>
-                          <li class="node">Node.js</li>
-                          <li class="dart">Dart</li>
-                          <li class="flutter">Flutter</li>
-                          <li class="git">GitHub</li>
-                          <li class="mysql">MySQL</li>
-                          <li class="mssql">MS SQL</li>
-                          <li class="firebase">Firebase</li>
-                          <li class="c">C</li>
-                          <li class="cpp">C++</li>
-                          <li class="java">JAVA</li>
-                          <li class="python">PYTHON</li>
-                          <li class="oop">OOP</li>
-                          <li class="data">DATA STRUCTURE</li>
-                          <li class="algo">ALGORITHMS</li>
-                          
-                      </ul>
-                  </div>
-              </div>
-      </div>
-  </div>
+.navbar-menu a:hover{
+  border-color:#00eaff;
+  background:#00eaff11;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px #00eaff44;
+}
 
-  </div>
+/* HERO */
+.profile{
+  text-align:center;
+  padding:100px 7% 80px;
+  position:relative;
+}
 
-  <!-- professional experience ends here  -->
+.profile .image{
+  animation:slideInLeft 1s ease-out;
+}
 
+.profile img{
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  box-shadow:0 0 25px #00eaff55;
+  margin-bottom:30px;
+  transition:all 0.4s ease;
+  animation:pulse 3s infinite;
+  border:4px solid #00eaff33;
+}
+
+.profile img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 45px #00eaff99;
+}
+
+.profile-desc{
+  animation:slideInRight 1s ease-out;
+  max-width:700px;
+  margin:0 auto;
+}
+
+.profile-desc h1{
+  font-size:3.3rem;
+  margin-bottom:20px;
+}
+
+.profile-desc p{
+  font-size:1.25rem;
+  margin-bottom:0;
+}
+
+/* ABOUT */
+.about-me{
+  background:#0d2538;
+  padding:100px 7%;
+  text-align:center;
+}
+
+.about-me h2{
+  margin-bottom:40px;
+  position:relative;
+  display:inline-block;
+}
+
+.about-me h2::after{
+  content:'';
+  position:absolute;
+  bottom:-10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:4px;
+  background:#00eaff;
+  border-radius:10px;
+  box-shadow:0 0 10px #00eaff;
+}
+
+.dotted-hr{
+  border:none;
+  border-top:3px dotted #00eaff55;
+  margin:30px auto;
+  width:120px;
+}
+
+.about-content{
+  display:flex;
+  align-items:center;
+  gap:50px;
+  margin-top:50px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.aboutme-image{
+  flex:1;
+  min-width:280px;
+  animation:slideInLeft 1s ease-out;
+}
+
+.aboutme-image img{
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  border:4px solid #00eaff;
+  box-shadow:0 0 30px #00eaff88;
+  transition:all 0.4s ease;
+}
+
+.aboutme-image img:hover{
+  transform:rotate(5deg) scale(1.05);
+  box-shadow:0 0 50px #00eaffaa;
+}
+
+.aboutme-desc{
+  flex:1;
+  text-align:left;
+  min-width:300px;
+  max-width:600px;
+  animation:slideInRight 1s ease-out;
+}
+
+.aboutme-desc p{
+  font-size:1.2rem;
+  margin-bottom:30px;
+  line-height:1.8;
+}
+
+.aboutme-desc hr{
+  border:none;
+  border-top:1px solid #00eaff33;
+  margin:20px 0;
+}
+
+.aboutme-desc > p:not(:first-child){
+  font-size:1.05rem;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 0;
+}
+
+.cv-button{
+  background:linear-gradient(135deg, #00eaff, #00b8cc);
+  border:none;
+  padding:16px 40px;
+  border-radius:30px;
+  color:#000;
+  font-size:1.1rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  margin-top:20px;
+  box-shadow:0 5px 20px #00eaff44;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.cv-button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 30px #00eaff66;
+  background:linear-gradient(135deg, #00d4e6, #009fb3);
+}
+
+.cv-button:active{
+  transform:translateY(-1px);
+}
+
+/* PROJECTS */
+.projects{
+  background:#08111c;
+  padding:100px 7%;
+  text-align:center;
+}
+
+.projects h2{
+  margin-bottom:40px;
+  position:relative;
+  display:inline-block;
+}
+
+.projects h2::after{
+  content:'';
+  position:absolute;
+  bottom:-10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:4px;
+  background:#00eaff;
+  border-radius:10px;
+  box-shadow:0 0 10px #00eaff;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  gap:35px;
+  margin-top:50px;
+}
+
+.project-card{
+  background:#0e1e2d;
+  padding:35px 30px;
+  border-radius:20px;
+  border:2px solid #00eaff22;
+  transition:all 0.4s ease;
+  position:relative;
+  overflow:hidden;
+  animation:fadeInUp 0.8s ease-out;
+}
+
+.project-card::before{
+  content:'';
+  position:absolute;
+  top:-50%;
+  left:-50%;
+  width:200%;
+  height:200%;
+  background:radial-gradient(circle, #00eaff11 0%, transparent 70%);
+  opacity:0;
+  transition:opacity 0.4s ease;
+}
+
+.project-card:hover::before{
+  opacity:1;
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 40px #00eaff44;
+  border-color:#00eaff;
+}
+
+.project-card h3{
+  position:relative;
+  z-index:1;
+  margin-bottom:20px;
+}
+
+.project-card h3::after{
+  content:'';
+  display:block;
+  width:60px;
+  height:3px;
+  background:#00eaff;
+  margin:15px auto 0;
+  border-radius:100px;
+  box-shadow:0 0 10px #00eaff;
+  transition:width 0.3s ease;
+}
+
+.project-card:hover h3::after{
+  width:100px;
+}
+
+.project-card p{
+  position:relative;
+  z-index:1;
+  margin-bottom:25px;
+  font-size:1.05rem;
+}
+
+.project-links{
+  position:relative;
+  z-index:1;
+  display:flex;
+  gap:15px;
+  justify-content:center;
+}
+
+.project-links a{
+  padding:12px 28px;
+  border-radius:25px;
+  border:2px solid #00eaff;
+  font-weight:600;
+  font-size:.95rem;
+  transition:all 0.3s ease;
+  background:transparent;
+}
+
+.project-links a:hover{
+  background:#00eaff;
+  color:#000;
+  transform:translateY(-2px);
+  box-shadow:0 5px 20px #00eaff66;
+}
+
+/* EDUCATION & SKILLS */
+.professional-experience{
+  padding:100px 7%;
+  display:flex;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.education, .skills{
+  flex:1;
+  min-width:300 |
+
+px;
+  animation:fadeInUp 0.8s ease-out;
+}
+
+.card{
+  background:#102033;
+  border-radius:20px;
+  padding:35px;
+  border:2px solid #00eaff22;
+  transition:all 0.4s ease;
+  height:100%;
+}
+
+.card:hover{
+  box-shadow:0 10px 35px #00eaff44;
+  border-color:#00eaff66;
+  transform:translateY(-5px);
+}
+
+.card-icon{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.rounded-img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:3px solid #00eaff;
+  padding:15px;
+  background:#0d1628;
+  box-shadow:0 0 20px #00eaff44;
+  transition:all 0.3s ease;
+}
+
+.card:hover .rounded-img{
+  transform:rotate(360deg) scale(1.1);
+  box-shadow:0 0 30px #00eaff88;
+}
+
+.card-title h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.card-desc ol{
+  list-style:none;
+  padding:0;
+}
+
+.card-desc ol li{
+  padding:20px;
+  margin-bottom:15px;
+  background:#0d1628;
+  border-radius:12px;
+  border-left:4px solid #00eaff;
+  transition:all 0.3s ease;
+  font-size:1.05rem;
+}
+
+.card-desc ol li:hover{
+  transform:translateX(10px);
+  background:#0e1e2d;
+  box-shadow:0 5px 15px #00eaff33;
+}
+
+.card-desc ol li strong{
+  color:#00eaff;
+  font-size:1.15rem;
+  display:block;
+  margin-bottom:8px;
+}
+
+.card-desc hr{
+  display:none;
+}
+
+.skills-container ul{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  padding:0;
+}
+
+.skills-container li{
+  padding:12px 24px;
+  background:#0d1628;
+  border-radius:25px;
+  border:2px solid #00eaff44;
+  font-weight:600;
+  font-size:.95rem;
+  transition:all 0.3s ease;
+  cursor:default;
+}
+
+.skills-container li:hover{
+  background:#00eaff;
+  color:#000;
+  transform:translateY(-5px) scale(1.05);
+  box-shadow:0 8px 20px #00eaff66;
+  border-color:#00eaff;
+}
+
+/* CONTACT */
+.achievemnet-contact{
+  padding:100px 7%;
+  display:flex;
+  gap:50px;
+  flex-wrap:wrap;
+  background:#0d2538;
+}
+
+.contact, .contact-links{
+  flex:1;
+  min-width:300px;
+  animation:fadeInUp 0.8s ease-out;
+}
+
+.contact h2, .contact-links h2{
+  margin-bottom:30px;
+  position:relative;
+  display:inline-block;
+}
+
+.contact h2::after, .contact-links h2::after{
+  content:'';
+  position:absolute;
+  bottom:-8px;
+  left:0;
+  width:60px;
+  height:4px;
+  background:#00eaff;
+  border-radius:10px;
+  box-shadow:0 0 10px #00eaff;
+}
+
+.contact input, .contact textarea{
+  width:100%;
+  padding:16px 20px;
+  border:2px solid #00eaff33;
+  border-radius:12px;
+  background:#0a1520;
+  color:#e6f3ff;
+  font-size:1.05rem;
+  margin-bottom:20px;
+  transition:all 0.3s ease;
+  font-family:'Fira Sans',sans-serif;
+}
+
+.contact input:focus, .contact textarea:focus{
+  outline:none;
+  border-color:#00eaff;
+  background:#0d1628;
+  box-shadow:0 0 15px #00eaff33;
+}
+
+.contact input::placeholder, .contact textarea::placeholder{
+  color:#7aaac4;
+}
+
+.contact button{
+  padding:14px 35px;
+  border:none;
+  border-radius:25px;
+  font-size:1rem;
+  font-weight:700;
+  cursor:pointer;
+  margin-right:15px;
+  transition:all 0.3s ease;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.contact button[type="submit"]{
+  background:linear-gradient(135deg, #00eaff, #00b8cc);
+  color:#000;
+  box-shadow:0 5px 20px #00eaff44;
+}
+
+.contact button[type="submit"]:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 30px #00eaff66;
+}
+
+.contact button[type="reset"]{
+  background:transparent;
+  color:#00eaff;
+  border:2px solid #00eaff;
+}
+
+.contact button[type="reset"]:hover{
+  background:#00eaff22;
+  transform:translateY(-3px);
+}
+
+.media-buttons{
+  display:flex;
+  gap:20px;
+  margin-top:30px;
+  flex-wrap:wrap;
+}
+
+.media-buttons .btn{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  border:2px solid #00eaff;
+  background:#0a1520;
+  color:#00eaff;
+  font-size:1.5rem;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.media-buttons .btn:hover{
+  background:#00eaff;
+  color:#000;
+  transform:translateY(-5px) rotate(360deg);
+  box-shadow:0 8px 25px #00eaff66;
+}
+
+/* FOOTER */
+.footer{
+  background:#000;
+  color:#7aaac4;
+  text-align:center;
+  padding:30px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.footer-menu{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.footer-menu a{
+  color:#7aaac4;
+  font-weight:600;
+  transition:all 0.3s ease;
+}
+
+.footer-menu a:hover{
+  color:#00eaff;
+  transform:translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+/* Mobile First - Base styles are for mobile */
+
+/* Small Tablets */
+@media (min-width: 576px){
+  .profile img{
+    width:300px;
+    height:300px;
+  }
+  .aboutme-image img{
+    width:260px;
+    height:260px;
+  }
+  .projects-grid{
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px){
+  h1{font-size:3.2rem;}
+  h2{font-size:2.2rem;}
+  .navbar{padding:18px 6%;}
+  .navbar-menu{flex-direction:row; gap:15px;}
+  .profile{padding:100px 6%;}
+  .profile img{width:320px; height:320px;}
+  .profile-desc h1{font-size:3.5rem;}
+  .about-me{padding:90px 6%;}
+  .about-content{gap:40px;}
+  .aboutme-image img{width:280px; height:280px;}
+  .projects{padding:90px 6%;}
+  .projects-grid{grid-template-columns:repeat(2, 1fr); gap:30px;}
+  .professional-experience{padding:90px 6%;}
+  .achievemnet-contact{padding:90px 6%;}
+  .footer{padding:28px 6%; flex-direction:row;}
+  .footer-menu{justify-content:flex-start;}
+}
+
+/* Desktop */
+@media (min-width: 992px){
+  .navbar{padding:0 8%; height:90px;}
+  .navbar-menu{gap:22px;}
+  .profile{display:flex; text-align:left; align-items:center; justify-content:space-between; padding:120px 8%;}
+  .profile .image{order:2;}
+  .profile-desc{order:1; padding-right:50px; max-width:none; text-align:left;}
+  .profile img{width:340px; height:340px; margin-bottom:0;}
+  .about-me{padding:100px 8%;}
+  .about-content{text-align:left; justify-content:space-between;}
+  .aboutme-image{text-align:center;}
+  .aboutme-image img{width:300px; height:300px;}
+  .projects{padding:100px 8%;}
+  .projects-grid{grid-template-columns:repeat(3, 1fr); gap:35px;}
+  .professional-experience{padding:100px 8%;}
+  .achievemnet-contact{padding:100px 8%;}
+  .footer{padding:30px 8%;}
+}
+
+/* Large Desktop */
+@media (min-width: 1200px){
+  .navbar{padding:0 10%;}
+  .profile{padding:130px 10%;}
+  .about-me{padding:110px 10%;}
+  .projects{padding:110px 10%;}
+  .professional-experience{padding:110px 10%;}
+  .achievemnet-contact{padding:110px 10%;}
+  .footer{padding:35px 10%;}
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 575px){
+  h1{font-size:2.3rem;}
+  h2{font-size:1.6rem;}
+  h3{font-size:1.25rem;}
+  p{font-size:1.05rem;}
+  .navbar{padding:15px 5%; flex-direction:row; justify-content:space-between; gap:0;}
+  .nav-heading h1{font-size:1.8rem;}
   
-  <!-- achievement-contact starts from here  -->
+  /* Show Hamburger */
+  .hamburger{display:flex;}
+  
+  /* Hide Menu by Default */
+  .navbar-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #0d1628;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 5%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
 
-  <div class="achievemnet-contact">
-      
-      <div class="contact col-6" id="contact-id">
-          <h2>CONTACT ME</h2>
-          <hr class="dotted-hr">
+  .navbar-menu.active{
+    max-height: 400px;
+    padding: 20px 5%;
+  }
 
-          <form action="mailto:takbirhasan274@gmail.com" method="post" enctype="text/plain">
-              <p><input type="text" placeholder="Your Name" name="name"></p>
-              <p><input type="email" placeholder="Your Email" name="email"></p>
-              <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
-              <button type="submit">SEND</button>
-              <button type="reset">RESET</button>
-          </form>
-      </div>
+  .navbar-menu a{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
 
-      <div class="contact-links col-6">
-          <h2>More ways to Contact</h2>
-          <hr class="dotted-hr">
-          <div class="media-buttons">
-              <button class="btn" onclick="window.open('http://www.youtube.com/c/takbirthebluefish')" class="request-callback"><i class="fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i></button>
-              <button class="btn" onclick="window.open('https://www.facebook.com/takbir.hasan.184')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
-              <button class="btn" onclick="window.open('http://www.sajidhasantakbir.blogspot.com/')" class="btn request-callback"> <span style="font-size: 1.7rem;">&#127760;</span> </i></button>
-              <button class="btn" onclick="window.open('https://join.skype.com/invite/eUv5i04rEDXq')" class="btn request-callback"><i class="fa fa-skype" style="color:  #3b5998;" aria-hidden="true"></i></button>
-              <button class="btn" onclick="window.open('https://www.linkedin.com/in/sajid-hasan-takbir')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
-              <button class="btn" onclick="window.open('https://github.com/takbir-hasan')" class="btn request-callback"><i class="fa fa-github" aria-hidden="true" style="color: #000000;"></i></button>
-          </div>
-      </div>
+  .navbar-menu.active a{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-menu a:nth-child(1){transition-delay:0.1s;}
+  .navbar-menu a:nth-child(2){transition-delay:0.15s;}
+  .navbar-menu a:nth-child(3){transition-delay:0.2s;}
+  .navbar-menu a:nth-child(4){transition-delay:0.25s;}
+  .navbar-menu a:nth-child(5){transition-delay:0.3s;}
+
+  .profile{padding:70px 5% 60px;}
+  .profile img{width:240px; height:240px;}
+  .profile-desc h1{font-size:2.5rem;}
+  .profile-desc p{font-size:1.1rem;}
+  .about-me{padding:70px 5%;}
+  .about-content{gap:30px;}
+  .aboutme-image img{width:220px; height:220px;}
+  .aboutme-desc{padding:0 10px;}
+  .cv-button{padding:14px 32px; font-size:1rem; width:100%;}
+  .projects{padding:70px 5%;}
+  .projects-grid{grid-template-columns:1fr; gap:25px;}
+  .project-card{padding:28px 22px;}
+  .project-links{flex-direction:column; gap:12px;}
+  .project-links a{display:block; text-align:center;}
+  .professional-experience{padding:70px 5%; gap:30px;}
+  .card{padding:25px 20px;}
+  .card-desc ol li{padding:15px; font-size:1rem;}
+  .skills-container ul{justify-content:center; gap:10px;}
+  .skills-container li{padding:10px 20px; font-size:.9rem;}
+  .achievemnet-contact{padding:70px 5%; gap:40px;}
+  .contact input, .contact textarea{padding:14px 16px; font-size:1rem;}
+  .contact button{padding:12px 28px; font-size:.95rem; width:100%; margin-right:0; margin-bottom:12px;}
+  .media-buttons{justify-content:center; gap:15px;}
+  .media-buttons .btn{width:55px; height:55px; font-size:1.3rem;}
+  .footer{padding:25px 5%; flex-direction:column; gap:15px; text-align:center;}
+  .footer-menu{flex-direction:column; gap:12px; width:100%;}
+  .footer-menu a{display:block; padding:8px;}
+  .footer-desc{width:100%;}
+}
+
+/* Very Small Devices */
+@media (max-width: 375px){
+  h1{font-size:2rem;}
+  .profile img{width:200px; height:200px;}
+  .profile-desc h1{font-size:2.2rem;}
+  .aboutme-image img{width:200px; height:200px;}
+  .project-card{padding:25px 18px;}
+  .rounded-img{width:70px; height:70px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-heading"><h1>Takbir Hasan</h1></div>
+
+  <!-- Hamburger Button (Mobile Only) -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
   </div>
 
-  <!-- achievement-contact ends here  -->
-
-
-   <!-- footer starts from here  -->
-
-   <div class="footer">
-      <div class="footer-menu col-6">
-          <a href="#">Home</a>
-          <a href="#about-me-id">About Me</a>
-          <a href="#skill-id">Skill</a>
-          <a href="#contact-id">Contact Me</a>
-      </div>
-
-      <div class="footer-desc col-6">
-            Copyright &copy; 2024 Sajid Hasan Takbir. All Rights reserved.
-      </div>
+  <div class="navbar-menu" id="navMenu">
+    <a href="#">Home</a>
+    <a href="#about-me-id">About</a>
+    <a href="#projects-id">Projects</a>
+    <a href="#skill-id">Skills</a>
+    <a href="#contact-id">Contact</a>
   </div>
-  <!-- footer ends here  -->
+</div>
 
+<!-- HERO -->
+<div class="profile">
+  <div class="image"><img src="images/profile.jpg" alt="Sajid Hasan Takbir"></div>
+  <div class="profile-desc">
+    <h1>Hi, I'm Sajid Hasan Takbir</h1>
+    <p>Welcome to my personal portfolio. I build web & mobile applications with modern tools and passion.</p>
+  </div>
+</div>
 
+<!-- ABOUT -->
+<div class="about-me" id="about-me-id">
+  <h2>ABOUT ME</h2>
+  <!-- <hr class="dotted-hr"> -->
+  <div class="about-content">
+    <div class="aboutme-image">
+      <img src="images/about.jpg" alt="About Sajid">
+    </div>
+    <div class="aboutme-desc">
+      <p>I am a passionate CSE student and full-stack developer. I enjoy learning modern technologies and solving real world problems.</p>
+      <hr>
+      <p><strong>Name:</strong> Sajid Hasan Takbir</p>
+      <hr>
+      <p><strong>Email:</strong> <a href="mailto:takbirhasan274@gmail.com">takbirhasan274@gmail.com</a></p>
+      <hr>
+      <p><strong>Phone:</strong> <a href="tel:+8801750006553">+8801750006553</a></p>
+      <hr>
+        <a href="#" target="_blank"><button class="cv-button">Download CV</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="projects" id="projects-id">
+  <h2>PROJECTS</h2>
+  <!-- <hr class="dotted-hr"> -->
+  
+  <div class="projects-grid">
+    <div class="project-card">
+        <h3>AI Smart University Helpdesk</h3>
+        <p>An AI assistant for university students to help them with their queries and submit complaints.</p>
+        <!-- <p>AI-powered assistant designed to help students and others with university-related queries. It supports real-time chat,complaint, notices, FAQs, and department-specific information.</p> -->
+        <div class="project-links">
+          <a target="_blank" href="https://github.com/takbir-hasan/HackTheAI-Final-Round">GitHub Link</a>
+          <!-- <a href="#">Live Demo</a> -->
+        </div>
+      </div>
+
+    <div class="project-card">
+      <h3>Complaint Desk</h3>
+      <p>A digital platform to submit, track & manage student complaints.</p>
+      <div class="project-links">
+        <a target="_blank" href="https://github.com/takbir-hasan/Complaint_Desk">GitHub Link</a>
+        <a target="_blank" href="https://complaint-desk.onrender.com/">Live</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>OneVote</h3>
+      <p>Secure digital voting app built for any kind of election.</p>
+      <div class="project-links">
+        <a target="_blank" href="https://github.com/takbir-hasan/OneVote">GitHub Link</a>
+        <!-- <a href="#">Live App</a> -->
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Tour Planner</h3>
+      <p>Travel booking system for hotels, transport & tour guides.</p>
+      <div class="project-links">
+        <a target="_blank" href="https://github.com/takbir-hasan/Tour_Planner">GitHub Link</a>
+        <a target="_blank" href="https://tour-planner-9799.onrender.com/">Live</a>
+      </div>
+      </div>
+
+    <div class="project-card">
+        <h3>Break Breaker Game</h3>
+        <p>A simple brick breaker game built using C++ and OpenGL glut library.</p>
+        <div class="project-links">
+          <a target="_blank" href="https://github.com/takbir-hasan/Brick_Breaker_Game">GitHub Link</a>
+          <!-- <a href="#">Live App</a> -->
+         </div>    
+    </div>
+
+    <div class="project-card">
+        <h3>SMS and Email Spam Checker</h3>
+        <p>Web app that detects whether an SMS or email message is spam or not. </p>
+        <div class="project-links">
+          <a target="_blank" href="https://github.com/takbir-hasan/Email_Or_SMS_Spam_Checker">GitHub Link</a>
+          <!-- <a href="#">Live App</a> -->
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDUCATION & SKILLS -->
+<div class="professional-experience" id="skill-id">
+  <div class="education">
+    <div class="card">
+      <div class="card-icon"><img class="rounded-img" src="images/book.png" alt="Education"></div>
+      <div class="card-title"><h2>EDUCATION</h2></div>
+      <div class="card-desc">
+        <ol>
+          <li>
+            <strong>B.Sc in CSE</strong>
+            2021-2025<br>
+            Jashore University of Science and Technology, Bangladesh
+          </li>
+          <li>
+            <strong>HSC</strong>
+            2019-2020<br>
+            Govt. Rajendra College, Faridpur
+          </li>
+          <li>
+            <strong>SSC</strong>
+            2017-2018<br>
+            Faridpur Zilla School, Faridpur
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class=":skills">
+    <div class="card">
+      <div class="card-icon"><img class="rounded-img" src="images/skill.png" alt="Skills"></div>
+      <div class="card-title"><h2>SKILLS</h2></div>
+      <div class="card-desc">
+        <div class="skills-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>Flutter</li>
+            <li>Dart</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>Firebase Firestore</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Machine Learning</li>
+            <li>LLM</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="achievemnet-contact" id="contact-id">
+  <div class="contact">
+    <h2>CONTACT ME</h2>
+    <!-- <hr class="dotted-hr"> -->
+    <form action="mailto:takbirhasan274@gmail.com" method="post">
+      <p><input type="text" name="name" placeholder="Your Name" required></p>
+      <p><input type="email" name="email" placeholder="Your Email" required></p>
+      <textarea name="message" rows="8" placeholder="Your Message" required></textarea>
+      <button type="submit">SEND</button>
+      <button type="reset">RESET</button>
+    </form>
+  </div>
+
+  <div class="contact-links">
+    <h2>More Ways to Connect</h2>
+    <!-- <hr class="dotted-hr"> -->
+    <div class="media-buttons">
+     <a target="_blank" href="https://www.youtube.com/takbirthebluefish"><button class="btn"><i class="fa fa-youtube-play"></i></button></a>
+      <a target="_blank" href="https://www.facebook.com/takbir.hasan.184"><button class="btn"><i class="fa fa-facebook"></i></button></a>
+      <a target="_blank" href="https://www.linkedin.com/in/sajid-hasan-takbir"><button class="btn"><i class="fa fa-linkedin"></i></button></a>
+      <a target="_blank" href="https://github.com/takbir-hasan"><button class="btn"><i class="fa fa-github"></i></button></a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-menu">
+    <a href="#">Home</a>
+    <a href="#about-me-id">About</a>
+    <a href="#projects-id">Projects</a>
+    <a href="#skill-id">Skills</a>
+    <a href="#contact-id">Contact</a>
+  </div>
+  <div class="footer-desc">© 2026 Sajid Hasan Takbir</div>
+</div>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    const hamburger = document.querySelector('.hamburger');
+    
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.navbar-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navMenu').classList.remove('active');
+      document.querySelector('.hamburger').classList.remove('active');
+    });
+  });
+</script>
 
 </body>
-
 </html>

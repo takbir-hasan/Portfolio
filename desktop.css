@@ -1,180 +1,77 @@
-/* For desktop: */
-.col-1 {
-      width: 8.33%;
+/* GRID */
+.col-4{width:33.33%} .col-6{width:50%} .col-8{width:66.66%} .col-12{width:100%}
+
+/* NAV */
+.navbar{
+  flex-direction:row;
+  height:90px;
+  padding:0 8%;
+}
+.navbar-menu{
+  flex-direction:row;
+  gap:22px;
 }
 
-.col-2 {
-      width: 16.66%;
+/* HERO */
+.profile{
+  display:flex;
+  text-align:left;
+  align-items:center;
+  justify-content:space-between;
+  padding:120px 8%;
+}
+.profile img{
+  width:340px;
+  height:340px;
+  margin-bottom:0;
+}
+.profile-desc{
+  padding-left:40px;
 }
 
-.col-3 {
-      width: 25%;
+/* ABOUT */
+.about-me{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  text-align:left;
+  padding:110px 8%;
+}
+.aboutme-image img{
+  width:300px;
+  height:300px;
+  margin-bottom:0;
+}
+.aboutme-desc{
+  width:50%;
+  padding-left:30px;
 }
 
-.col-4 {
-      width: 33.33%;
+/* PROJECTS GRID */
+.projects{
+  padding:110px 8%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
 }
 
-.col-5 {
-      width: 41.66%;
+/* EDUCATION & SKILLS */
+.professional-experience{
+  padding:110px 8%;
+  display:flex;
+  gap:30px;
 }
 
-.col-6 {
-      width: 50%;
+/* CONTACT */
+.achievemnet-contact{
+  padding:110px 8%;
+  display:flex;
+  gap:50px;
 }
 
-.col-7 {
-      width: 58.33%;
+/* FOOTER */
+.footer{
+  display:flex;
+  justify-content:space-between;
+  padding:30px 8%;
 }
-
-.col-8 {
-      width: 66.66%;
-}
-
-.col-9 {
-      width: 75%;
-}
-
-.col-10 {
-      width: 83.33%;
-}
-
-.col-11 {
-      width: 91.66%;
-}
-
-.col-12 {
-      width: 100%;
-}
-
-/* navbar deign starts here */
-
-.navbar {
-      height: 100px;
-}
-
-.nav-heading h1 {
-      text-align: left;
-}
-
-.navbar-menu {
-      flex-direction: row;
-      justify-content: flex-end;
-}
-
-.navbar-menu a {
-      padding: 5px 20px;
-      margin: 20px 0;
-      border: 100px;
-      background-color: transparent;
-}
-
-/* navbar design ends here */
-
-
-
-/* profile design starts here  */
-
-.profile .image {
-      width: 450px;
-      float: right;
-      padding: 30px;
-      padding-top: 0;
-}
-
-.profile-desc {
-      margin-left: 20px;
-      padding-left: 20px;
-      margin-top: 20px;
-      padding-top: 20px;
-}
-
-.profile-desc h1 {
-      float: left;
-      margin: 0 auto;
-      width: 50%;
-      text-align: center;
-      margin-bottom: 10px;
-}
-
-.profile-desc p {
-      float: left;
-      color: gray;
-      margin: 0 auto;
-      width: 50%;
-      text-align: center;
-      margin-bottom: 10px;
-
-}
-
-
-
-/* profile design ends here  */
-
-
-
-/* about me design starts here  */
-
-
-.aboutme-image {
-      margin-top: 100px;
-}
-
-.aboutme-image img {
-      height: 400px;
-      width: 380px;
-}
-
-.aboutme-desc p {
-      text-align: left;
-}
-
-/* about me design ends here  */
-
-/* professional-experience starts here */
-.professional-experience {
-      padding: 1% 5%;
-}
-
-/* professional-experience ends here */
-
-
-/* achievement-contact starts here  */
-.achievement{
-      padding-right: 50px;
-  }
-  
-  .contact button{
-      width: 150px;
-  }
-  
-  .contact-links{
-      position: relative;
-  }
-  
-  .media-buttons{
-      position: absolute;
-      margin-top: 200px;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-  }
-  /* achievement-contact ends here  */
-
-  /* footer starts from here  */
-.footer-menu{
-      margin-top: 12px;
-  }
-  
-  .footer-menu a {
-      display: inline;
-      margin: 10px;
-      
-  }
-  .footer-desc{
-            align-items: center;
-            margin-top: 15px ;
-  }
-
-
-  /* footer ends here  */
