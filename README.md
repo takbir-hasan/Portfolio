@@ -67,7 +67,7 @@ Feel free to reach out!
 ## 🌐 Live Portfolio
 
 See the portfolio in action:  
-**[Open index.html](index.html)** (or [hosted version if available])
+**[https://portfolio-d2p.pages.dev/](index.html)** 
 
 ---
 
