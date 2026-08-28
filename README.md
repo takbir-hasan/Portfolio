@@ -14,12 +14,12 @@ Here are some of the key projects I have worked on:
 - **[OneVote](https://github.com/takbir-hasan/OneVote):** Secure digital voting application supporting various election scenarios.
 - **[Tour Planner](https://github.com/takbir-hasan/Tour_Planner) - [Live Demo](https://tour-planner-9799.onrender.com/):** Platform for booking hotels, transport, and tour guides.
 - **[Break Breaker Game](https://github.com/takbir-hasan/Brick_Breaker_Game):** Brick-breaker game built in C++ with OpenGL.
-- **[Field Service System](https://github.com/takbir-hasan/field-service-system.git)** Full-stack ticket management application built with React, TypeScript, Express, MySQL, and Docker.
+- **[Field Service System](https://github.com/takbir-hasan/field-service-system.git):** Full-stack ticket management application built with React, TypeScript, Express, MySQL, and Docker.
 - **[SMS and Email Spam Checker](https://github.com/takbir-hasan/Email_Or_SMS_Spam_Checker):**  
   A web app to detect whether an SMS or email is spam.
-- **[Tour Companion](https://github.com/takbir-hasan/Tour_Companion.git)**
+- **[Tour Companion](https://github.com/takbir-hasan/Tour_Companion.git):**
   A JavaFX desktop application for booking tour guides, managing bookings, and leaving ratings.
-- **[Online Shopping Platform](https://github.com/takbir-hasan/Online_Shopping_Platform.git)**
+- **[Online Shopping Platform](https://github.com/takbir-hasan/Online_Shopping_Platform.git):**
   A console-based Java application that simulates an online shopping experience.
 
 ---
