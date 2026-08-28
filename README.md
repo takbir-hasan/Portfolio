@@ -22,8 +22,6 @@ Here are some of the key projects I have worked on:
 - **[Online Shopping Platform](https://github.com/takbir-hasan/Online_Shopping_Platform.git)**
   A console-based Java application that simulates an online shopping experience.
 
-<!-- See the **Projects** section in the [website](index.html) for more details. -->
-
 ---
 
 ## Skills
