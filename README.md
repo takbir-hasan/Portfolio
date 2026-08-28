@@ -36,7 +36,7 @@ Here are some of the key projects I have worked on:
 
 ## Education
 
-- **B.Sc. Engineering in Computer Science & Engineering** - Jashore University of Science & Technology, Bangladesh (2022-2026)
+- **B.Sc. Engineering in Computer Science and Engineering** - Jashore University of Science and Technology, Bangladesh (2022-2026)
 - **HSC** - Govt. Rajendra College, Faridpur (2019-2020)
 - **SSC** - Faridpur Zilla School, Faridpur (2017-2018)
 
