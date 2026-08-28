@@ -67,7 +67,7 @@ Feel free to reach out!
 ## 🌐 Live Portfolio
 
 See the portfolio in action:  
-**[https://portfolio-d2p.pages.dev/](index.html)** 
+**[https://takbir-hasan.onrender.com](https://takbir-hasan.onrender.com)** 
 
 ---
 
